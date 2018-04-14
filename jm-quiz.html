@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<script src="./src/elm/Main.js"></script>
 
 <dom-module id="jm-quiz">
   <template>
@@ -7,7 +8,7 @@
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+    <div id="quiz"></div>
   </template>
 
   <script>
@@ -28,6 +29,12 @@
             value: 'jm-quiz'
           }
         };
+      }
+
+      connectedCallback() {
+        super.connectedCallback();
+
+        Elm.Main.embed(this.$.quiz);
       }
     }
 
