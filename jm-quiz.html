@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="jm-quiz">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `jm-quiz`
+     * Elm quiz in polymer
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class JmQuiz extends Polymer.Element {
+      static get is() { return 'jm-quiz'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'jm-quiz'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(JmQuiz.is, JmQuiz);
+  </script>
+</dom-module>
