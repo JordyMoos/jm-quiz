@@ -1,5 +1,6 @@
 .idea
 bower_components
 node_modules
-elm_stuff
-buildit
+elm-stuff
+build
+src/elm/*.js
