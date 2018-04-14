@@ -1,0 +1,25 @@
+{
+  "name": "jm-quiz",
+  "version": "0.0.1",
+  "description": "Elm quiz in polymer",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "polymer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordyMoos/jm-quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordyMoos/jm-quiz/issues"
+  },
+  "homepage": "https://github.com/JordyMoos/jm-quiz#readme",
+  "devDependencies": {
+    "polymer-cli": "^1.6.0"
+  }
+}
